@@ -1,0 +1,6943 @@
+object Form1: TForm1
+  Left = 132
+  Height = 872
+  Top = 90
+  Width = 1631
+  Caption = 'mazexz'' Rewards File Creator'
+  ClientHeight = 872
+  ClientWidth = 1631
+  LCLVersion = '2.0.12.0'
+  object Label2: TLabel
+    Left = 280
+    Height = 15
+    Top = 112
+    Width = 42
+    Caption = 'For sale'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 392
+    Height = 15
+    Top = 112
+    Width = 28
+    Caption = 'Price'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 480
+    Height = 15
+    Top = 112
+    Width = 32
+    Caption = 'Seller'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 200
+    Height = 15
+    Top = 112
+    Width = 33
+    Caption = 'Name'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 552
+    Height = 15
+    Top = 112
+    Width = 30
+    Caption = 'Level'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label18: TLabel
+    Left = 392
+    Height = 15
+    Top = 80
+    Width = 45
+    Caption = 'Vehicles'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsUnderline]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 648
+    Height = 15
+    Top = 112
+    Width = 57
+    Caption = 'Attributes'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object ScrollBox1: TScrollBox
+    Left = 72
+    Height = 576
+    Top = 144
+    Width = 768
+    HorzScrollBar.Page = 744
+    VertScrollBar.Page = 572
+    ClientHeight = 572
+    ClientWidth = 747
+    TabOrder = 0
+    object box0: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 0
+      Width = 720
+      Caption = 'Reward Car 0'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 0
+      object enable0: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype0: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultcar'
+      end
+      object price0: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller0: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level0: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 1
+      end
+      object reward0: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed0: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel0: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability0: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling0: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box1: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 48
+      Width = 720
+      Caption = 'Reward Car 1'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 1
+      object enable1: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype1: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'bonusmission'
+      end
+      object price1: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller1: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level1: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 1
+      end
+      object reward1: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed1: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel1: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability1: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling1: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box2: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 96
+      Width = 720
+      Caption = 'Reward Car 2'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 2
+      object enable2: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype2: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'streetrace'
+      end
+      object price2: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller2: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level2: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 1
+      end
+      object reward2: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed2: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel2: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability2: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling2: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box3: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 144
+      Width = 720
+      Caption = 'Reward Car 3'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 3
+      object enable3: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype3: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price3: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller3: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level3: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 1
+      end
+      object reward3: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed3: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel3: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability3: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling3: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box4: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 192
+      Width = 720
+      Caption = 'Reward Car 4'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 4
+      object enable4: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype4: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price4: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller4: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level4: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 1
+      end
+      object reward4: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed4: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel4: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability4: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling4: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box5: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 240
+      Width = 720
+      Caption = 'Reward Car 5'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 5
+      object enable5: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype5: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price5: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller5: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level5: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 1
+      end
+      object reward5: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed5: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel5: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability5: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling5: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box6: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 288
+      Width = 720
+      Caption = 'Reward Car 6'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 6
+      object enable6: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype6: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultcar'
+      end
+      object price6: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller6: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level6: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 2
+      end
+      object reward6: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed6: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel6: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability6: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling6: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box7: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 336
+      Width = 720
+      Caption = 'Reward Car 7'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 7
+      object enable7: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype7: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'bonusmission'
+      end
+      object price7: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller7: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level7: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 2
+      end
+      object reward7: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed7: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel7: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability7: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling7: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box8: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 384
+      Width = 720
+      Caption = 'Reward Car 8'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 8
+      object enable8: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype8: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'streetrace'
+      end
+      object price8: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller8: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level8: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 2
+      end
+      object reward8: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed8: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel8: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability8: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling8: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box9: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 432
+      Width = 720
+      Caption = 'Reward Car 9'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 9
+      object enable9: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype9: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price9: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller9: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level9: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 2
+      end
+      object reward9: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed9: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel9: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability9: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling9: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box10: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 480
+      Width = 720
+      Caption = 'Reward Car 10'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 10
+      object enable10: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype10: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price10: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller10: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level10: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 2
+      end
+      object reward10: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed10: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel10: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability10: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling10: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box11: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 528
+      Width = 720
+      Caption = 'Reward Car 11'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 11
+      object enable11: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype11: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price11: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller11: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level11: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 2
+      end
+      object reward11: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed11: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel11: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability11: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling11: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box12: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 816
+      Width = 720
+      Caption = 'Reward Car 17'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 12
+      object enable12: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype12: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price12: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller12: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level12: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 3
+      end
+      object reward12: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed12: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel12: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability12: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling12: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box13: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 768
+      Width = 720
+      Caption = 'Reward Car 16'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 13
+      object enable13: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype13: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price13: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller13: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level13: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 3
+      end
+      object reward13: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed13: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel13: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability13: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling13: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box14: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 720
+      Width = 720
+      Caption = 'Reward Car 15'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 14
+      object enable14: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype14: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price14: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller14: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level14: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 3
+      end
+      object reward14: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed14: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel14: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability14: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling14: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box15: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 672
+      Width = 720
+      Caption = 'Reward Car 14'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 15
+      object enable15: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype15: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'streetrace'
+      end
+      object price15: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller15: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level15: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 3
+      end
+      object reward15: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed15: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel15: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability15: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling15: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box16: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 624
+      Width = 720
+      Caption = 'Reward Car 13'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 16
+      object enable16: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype16: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'bonusmission'
+      end
+      object price16: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller16: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level16: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 3
+      end
+      object reward16: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed16: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel16: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability16: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling16: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box17: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 576
+      Width = 720
+      Caption = 'Reward Car 12'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 17
+      object enable17: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype17: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultcar'
+      end
+      object price17: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller17: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level17: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 3
+      end
+      object reward17: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed17: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel17: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability17: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling17: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box18: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1104
+      Width = 720
+      Caption = 'Reward Car 23'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 18
+      object enable18: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype18: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price18: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller18: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level18: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 4
+      end
+      object reward18: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed18: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel18: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability18: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling18: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box19: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1056
+      Width = 720
+      Caption = 'Reward Car 22'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 19
+      object enable19: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype19: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price19: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller19: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level19: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 4
+      end
+      object reward19: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed19: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel19: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability19: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling19: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box20: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1008
+      Width = 720
+      Caption = 'Reward Car 21'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 20
+      object enable20: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype20: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price20: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller20: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level20: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 4
+      end
+      object reward20: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed20: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel20: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability20: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling20: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box21: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 960
+      Width = 720
+      Caption = 'Reward Car 20'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 21
+      object enable21: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype21: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'streetrace'
+      end
+      object price21: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller21: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level21: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 4
+      end
+      object reward21: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed21: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel21: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability21: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling21: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box22: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 912
+      Width = 720
+      Caption = 'Reward Car 19'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 22
+      object enable22: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype22: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'bonusmission'
+      end
+      object price22: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller22: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level22: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 4
+      end
+      object reward22: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed22: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel22: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability22: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling22: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box23: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 864
+      Width = 720
+      Caption = 'Reward Car 18'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 23
+      object enable23: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype23: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultcar'
+      end
+      object price23: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller23: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level23: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 4
+      end
+      object reward23: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed23: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel23: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability23: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling23: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box24: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1392
+      Width = 720
+      Caption = 'Reward Car 29'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 24
+      object enable24: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype24: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price24: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller24: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level24: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 5
+      end
+      object reward24: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed24: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel24: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability24: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling24: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box25: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1344
+      Width = 720
+      Caption = 'Reward Car 28'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 25
+      object enable25: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype25: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price25: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller25: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level25: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 5
+      end
+      object reward25: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed25: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel25: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability25: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling25: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box26: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1296
+      Width = 720
+      Caption = 'Reward Car 27'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 26
+      object enable26: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype26: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price26: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller26: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level26: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 5
+      end
+      object reward26: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed26: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel26: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability26: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling26: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box27: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1248
+      Width = 720
+      Caption = 'Reward Car 26'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 27
+      object enable27: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype27: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'streetrace'
+      end
+      object price27: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller27: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level27: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 5
+      end
+      object reward27: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed27: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel27: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability27: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling27: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box28: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1200
+      Width = 720
+      Caption = 'Reward Car 25'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 28
+      object enable28: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype28: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'bonusmission'
+      end
+      object price28: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller28: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level28: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 5
+      end
+      object reward28: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed28: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel28: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability28: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling28: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box29: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1152
+      Width = 720
+      Caption = 'Reward Car 24'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 29
+      object enable29: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype29: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultcar'
+      end
+      object price29: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller29: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level29: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 5
+      end
+      object reward29: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed29: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel29: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability29: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling29: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box30: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1680
+      Width = 720
+      Caption = 'Reward Car 35'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 30
+      object enable30: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype30: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price30: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller30: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level30: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 6
+      end
+      object reward30: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed30: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel30: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability30: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling30: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box31: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1632
+      Width = 720
+      Caption = 'Reward Car 34'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 31
+      object enable31: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype31: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price31: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller31: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level31: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 6
+      end
+      object reward31: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed31: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel31: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability31: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling31: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box32: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1584
+      Width = 720
+      Caption = 'Reward Car 33'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 32
+      object enable32: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype32: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price32: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller32: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level32: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 6
+      end
+      object reward32: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed32: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel32: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability32: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling32: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box33: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1536
+      Width = 720
+      Caption = 'Reward Car 32'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 33
+      object enable33: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype33: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'streetrace'
+      end
+      object price33: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller33: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level33: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 6
+      end
+      object reward33: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed33: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel33: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability33: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling33: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box34: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1488
+      Width = 720
+      Caption = 'Reward Car 31'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 34
+      object enable34: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype34: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'bonusmission'
+      end
+      object price34: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller34: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level34: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 6
+      end
+      object reward34: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed34: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel34: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability34: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling34: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box35: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1440
+      Width = 720
+      Caption = 'Reward Car 30'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 35
+      object enable35: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype35: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultcar'
+      end
+      object price35: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller35: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level35: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 6
+      end
+      object reward35: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed35: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel35: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability35: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling35: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box36: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1968
+      Width = 720
+      Caption = 'Reward Car 41'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 36
+      object enable36: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype36: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price36: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller36: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level36: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 7
+      end
+      object reward36: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed36: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel36: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability36: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling36: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box37: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1920
+      Width = 720
+      Caption = 'Reward Car 40'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 37
+      object enable37: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype37: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price37: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller37: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level37: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 7
+      end
+      object reward37: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed37: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel37: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability37: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling37: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box38: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1872
+      Width = 720
+      Caption = 'Reward Car 39'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 38
+      object enable38: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype38: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price38: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller38: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'gil'
+      end
+      object level38: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 7
+      end
+      object reward38: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed38: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel38: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability38: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling38: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box39: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1824
+      Width = 720
+      Caption = 'Reward Car 38'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 39
+      object enable39: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype39: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'streetrace'
+      end
+      object price39: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller39: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level39: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 7
+      end
+      object reward39: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed39: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel39: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability39: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling39: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box40: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1776
+      Width = 720
+      Caption = 'Reward Car 37'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 40
+      object enable40: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype40: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'bonusmission'
+      end
+      object price40: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller40: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level40: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 7
+      end
+      object reward40: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed40: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel40: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability40: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling40: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+    object box41: TGroupBox
+      Left = 24
+      Height = 48
+      Top = 1728
+      Width = 720
+      Caption = 'Reward Car 36'
+      ClientHeight = 28
+      ClientWidth = 716
+      TabOrder = 41
+      object enable41: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype41: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultcar'
+      end
+      object price41: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller41: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object level41: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 4
+        MaxValue = 7
+        MinValue = 1
+        Value = 7
+      end
+      object reward41: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 5
+        Text = 'blank'
+      end
+      object speed41: TFloatSpinEdit
+        Left = 504
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 6
+      end
+      object aksel41: TFloatSpinEdit
+        Left = 552
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 7
+      end
+      object durability41: TFloatSpinEdit
+        Left = 600
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 8
+      end
+      object handling41: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 9
+      end
+    end
+  end
+  object Label7: TLabel
+    Left = 560
+    Height = 15
+    Top = 128
+    Width = 251
+    Caption = '(Top Speed, Acceleration, Toughness, Handling)'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object asMFK: TButton
+    Left = 888
+    Height = 25
+    Top = 744
+    Width = 75
+    Caption = 'Save As MFK'
+    OnClick = asMFKClick
+    TabOrder = 1
+  end
+  object asLUA: TButton
+    Left = 792
+    Height = 25
+    Top = 744
+    Width = 75
+    Caption = 'Save As LUA'
+    OnClick = asLUAClick
+    TabOrder = 2
+  end
+  object ScrollBox2: TScrollBox
+    Left = 912
+    Height = 384
+    Top = 144
+    Width = 533
+    HorzScrollBar.Page = 504
+    VertScrollBar.Page = 380
+    ClientHeight = 380
+    ClientWidth = 512
+    TabOrder = 3
+    object box42: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 0
+      Width = 504
+      Caption = 'Reward Skin 0'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 0
+      object enable42: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype42: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultskin'
+      end
+      object price42: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller42: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object reward42: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling42: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level42: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 1
+      end
+    end
+    object box43: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 48
+      Width = 504
+      Caption = 'Reward Skin 1'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 1
+      object enable43: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype43: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price43: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller43: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward43: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling43: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level43: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 1
+      end
+    end
+    object box44: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 96
+      Width = 504
+      Caption = 'Reward Skin 2'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 2
+      object enable44: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype44: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price44: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller44: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward44: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling44: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level44: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 1
+      end
+    end
+    object box45: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 144
+      Width = 504
+      Caption = 'Reward Skin 3'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 3
+      object enable45: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype45: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price45: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller45: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward45: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling45: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level45: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 1
+      end
+    end
+    object box46: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 336
+      Width = 504
+      Caption = 'Reward Skin 7'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 4
+      object enable46: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype46: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price46: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller46: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward46: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling46: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level46: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 2
+      end
+    end
+    object box47: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 288
+      Width = 504
+      Caption = 'Reward Skin 6'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 5
+      object enable47: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype47: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price47: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller47: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward47: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling47: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level47: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 2
+      end
+    end
+    object box48: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 240
+      Width = 504
+      Caption = 'Reward Skin 5'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 6
+      object enable48: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype48: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price48: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller48: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward48: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling48: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level48: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 2
+      end
+    end
+    object box49: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 192
+      Width = 504
+      Caption = 'Reward Skin 4'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 7
+      object enable49: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype49: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultskin'
+      end
+      object price49: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller49: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object reward49: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling49: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level49: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 2
+      end
+    end
+    object box50: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 528
+      Width = 504
+      Caption = 'Reward Skin 11'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 8
+      object enable50: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype50: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price50: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller50: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward50: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling50: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level50: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 3
+      end
+    end
+    object box51: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 480
+      Width = 504
+      Caption = 'Reward Skin 10'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 9
+      object enable51: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype51: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price51: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller51: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward51: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling51: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level51: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 3
+      end
+    end
+    object box52: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 432
+      Width = 504
+      Caption = 'Reward Skin 9'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 10
+      object enable52: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype52: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price52: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller52: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward52: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling52: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level52: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 3
+      end
+    end
+    object box53: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 384
+      Width = 504
+      Caption = 'Reward Skin 8'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 11
+      object enable53: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype53: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultskin'
+      end
+      object price53: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller53: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object reward53: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling53: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level53: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 3
+      end
+    end
+    object box54: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 720
+      Width = 504
+      Caption = 'Reward Skin 15'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 12
+      object enable54: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype54: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price54: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller54: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward54: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling54: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level54: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 4
+      end
+    end
+    object box55: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 672
+      Width = 504
+      Caption = 'Reward Skin 14'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 13
+      object enable55: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype55: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price55: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller55: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward55: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling55: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level55: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 4
+      end
+    end
+    object box56: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 624
+      Width = 504
+      Caption = 'Reward Skin 13'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 14
+      object enable56: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype56: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price56: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller56: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward56: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling56: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level56: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 4
+      end
+    end
+    object box57: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 576
+      Width = 504
+      Caption = 'Reward Skin 12'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 15
+      object enable57: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype57: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultskin'
+      end
+      object price57: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller57: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object reward57: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling57: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level57: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 4
+      end
+    end
+    object box58: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 912
+      Width = 504
+      Caption = 'Reward Skin 19'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 16
+      object enable58: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype58: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price58: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller58: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward58: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling58: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level58: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 5
+      end
+    end
+    object box59: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 864
+      Width = 504
+      Caption = 'Reward Skin 18'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 17
+      object enable59: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype59: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price59: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller59: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward59: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling59: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level59: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 5
+      end
+    end
+    object box60: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 816
+      Width = 504
+      Caption = 'Reward Skin 17'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 18
+      object enable60: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype60: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price60: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller60: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward60: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling60: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level60: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 5
+      end
+    end
+    object box61: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 768
+      Width = 504
+      Caption = 'Reward Skin 16'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 19
+      object enable61: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype61: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultskin'
+      end
+      object price61: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller61: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object reward61: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling61: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level61: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 5
+      end
+    end
+    object box62: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 1104
+      Width = 504
+      Caption = 'Reward Skin 23'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 20
+      object enable62: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype62: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price62: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller62: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward62: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling62: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level62: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 6
+      end
+    end
+    object box63: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 1056
+      Width = 504
+      Caption = 'Reward Skin 22'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 21
+      object enable63: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype63: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price63: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller63: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward63: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling63: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level63: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 6
+      end
+    end
+    object box64: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 1008
+      Width = 504
+      Caption = 'Reward Skin 21'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 22
+      object enable64: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype64: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price64: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller64: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward64: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling64: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level64: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 6
+      end
+    end
+    object box65: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 960
+      Width = 504
+      Caption = 'Reward Skin 20'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 23
+      object enable65: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype65: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultskin'
+      end
+      object price65: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller65: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object reward65: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling65: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level65: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 6
+      end
+    end
+    object box66: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 1296
+      Width = 504
+      Caption = 'Reward Skin 27'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 24
+      object enable66: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype66: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price66: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller66: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward66: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling66: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level66: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 7
+      end
+    end
+    object box67: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 1248
+      Width = 504
+      Caption = 'Reward Skin 26'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 25
+      object enable67: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype67: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price67: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller67: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward67: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling67: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level67: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 7
+      end
+    end
+    object box68: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 1200
+      Width = 504
+      Caption = 'Reward Skin 25'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 26
+      object enable68: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype68: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'forsale'
+      end
+      object price68: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller68: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'interior'
+      end
+      object reward68: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling68: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level68: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 7
+      end
+    end
+    object box69: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 1152
+      Width = 504
+      Caption = 'Reward Skin 24'
+      ClientHeight = 28
+      ClientWidth = 500
+      TabOrder = 27
+      object enable69: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object saletype69: TEdit
+        Left = 168
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 1
+        Text = 'defaultskin'
+      end
+      object price69: TEdit
+        Left = 264
+        Height = 23
+        Top = 0
+        Width = 80
+        NumbersOnly = True
+        TabOrder = 2
+        Text = '0'
+      end
+      object seller69: TEdit
+        Left = 360
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 3
+        Text = 'simpson'
+      end
+      object reward69: TEdit
+        Left = 80
+        Height = 23
+        Top = 0
+        Width = 80
+        TabOrder = 4
+        Text = 'blank'
+      end
+      object handling69: TFloatSpinEdit
+        Left = 648
+        Height = 23
+        Top = 0
+        Width = 42
+        DecimalPlaces = 1
+        Increment = 0.5
+        MaxValue = 5
+        TabOrder = 5
+      end
+      object level69: TSpinEditEx
+        Left = 456
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 6
+        MaxValue = 7
+        MinValue = 1
+        Value = 7
+      end
+    end
+  end
+  object Label19: TLabel
+    Left = 1152
+    Height = 15
+    Top = 80
+    Width = 29
+    Caption = 'Skins'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsUnderline]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 1072
+    Height = 15
+    Top = 112
+    Width = 42
+    Caption = 'For sale'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 992
+    Height = 15
+    Top = 112
+    Width = 33
+    Caption = 'Name'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 1184
+    Height = 15
+    Top = 112
+    Width = 28
+    Caption = 'Price'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 1272
+    Height = 15
+    Top = 112
+    Width = 32
+    Caption = 'Seller'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 1344
+    Height = 15
+    Top = 112
+    Width = 30
+    Caption = 'Level'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object ScrollBox3: TScrollBox
+    Left = 912
+    Height = 137
+    Top = 583
+    Width = 533
+    HorzScrollBar.Page = 496
+    VertScrollBar.Page = 129
+    ClientHeight = 133
+    ClientWidth = 529
+    TabOrder = 4
+    object box70: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 16
+      Width = 112
+      Caption = 'Level 1 Gags'
+      ClientHeight = 28
+      ClientWidth = 108
+      TabOrder = 0
+      object enableg0: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object gags0: TSpinEditEx
+        Left = 64
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 1
+        MaxValue = 255
+      end
+    end
+    object box71: TGroupBox
+      Left = 128
+      Height = 48
+      Top = 16
+      Width = 112
+      Caption = 'Level 2 Gags'
+      ClientHeight = 28
+      ClientWidth = 108
+      TabOrder = 1
+      object enableg1: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object gags1: TSpinEditEx
+        Left = 64
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 1
+        MaxValue = 255
+      end
+    end
+    object box72: TGroupBox
+      Left = 256
+      Height = 48
+      Top = 16
+      Width = 112
+      Caption = 'Level 3 Gags'
+      ClientHeight = 28
+      ClientWidth = 108
+      TabOrder = 2
+      object enableg2: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object gags2: TSpinEditEx
+        Left = 64
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 1
+        MaxValue = 255
+      end
+    end
+    object box73: TGroupBox
+      Left = 384
+      Height = 48
+      Top = 16
+      Width = 112
+      Caption = 'Level 4 Gags'
+      ClientHeight = 28
+      ClientWidth = 108
+      TabOrder = 3
+      object enableg3: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object gags3: TSpinEditEx
+        Left = 64
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 1
+        MaxValue = 255
+      end
+    end
+    object box74: TGroupBox
+      Left = 0
+      Height = 48
+      Top = 80
+      Width = 112
+      Caption = 'Level 5 Gags'
+      ClientHeight = 28
+      ClientWidth = 108
+      TabOrder = 4
+      object enableg4: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object gags4: TSpinEditEx
+        Left = 64
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 1
+        MaxValue = 255
+      end
+    end
+    object box75: TGroupBox
+      Left = 128
+      Height = 48
+      Top = 81
+      Width = 112
+      Caption = 'Level 6 Gags'
+      ClientHeight = 28
+      ClientWidth = 108
+      TabOrder = 5
+      object enableg5: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object gags5: TSpinEditEx
+        Left = 64
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 1
+        MaxValue = 255
+      end
+    end
+    object box76: TGroupBox
+      Left = 256
+      Height = 48
+      Top = 80
+      Width = 112
+      Caption = 'Level 7 Gags'
+      ClientHeight = 28
+      ClientWidth = 108
+      TabOrder = 6
+      object enableg6: TCheckBox
+        Left = 32
+        Height = 19
+        Top = 0
+        Width = 20
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object gags6: TSpinEditEx
+        Left = 64
+        Height = 23
+        Top = 0
+        Width = 40
+        MaxLength = 0
+        NumbersOnly = True
+        TabOrder = 1
+        MaxValue = 255
+      end
+    end
+  end
+  object Label20: TLabel
+    Left = 1152
+    Height = 15
+    Top = 552
+    Width = 27
+    Caption = 'Gags'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsUnderline]
+    ParentColor = False
+    ParentFont = False
+  end
+end

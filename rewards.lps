@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="7">
+      <Unit0>
+        <Filename Value="rewards.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="39" Y="11"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="..\Reward\reward.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="REWARD"/>
+        <CursorPos X="29" Y="181"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="C:\Users\mazexz\Documents\unit2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit2"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18" Y="62"/>
+        <UsageCount Value="23"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="D:\LAZARUS\fpc\source\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2102"/>
+        <CursorPos X="14" Y="2120"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="D:\LAZARUS\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3520"/>
+        <CursorPos Y="3548"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\Users\mazexz\AppData\Local\Temp\project1.lpr"/>
+        <UnitName Value="Project1"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\dummy\unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="22"/>
+      </Unit6>
+    </Units>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="..\Reward\reward.pas"/>
+        <Caret Line="570" Column="84" TopLine="539"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\Reward\reward.pas"/>
+        <Caret Line="866" Column="54" TopLine="856"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\Reward\reward.pas"/>
+        <Caret Line="41" Column="81" TopLine="13"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\Reward\reward.pas"/>
+        <Caret Line="208" TopLine="172"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\Reward\reward.pas"/>
+        <Caret Line="27" Column="478" TopLine="9"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\Reward\reward.pas"/>
+        <Caret Line="184" Column="50" TopLine="152"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\Reward\reward.pas"/>
+        <Caret Line="48" Column="36" TopLine="30"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\Reward\reward.pas"/>
+        <Caret Line="208" TopLine="172"/>
+      </Position8>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
